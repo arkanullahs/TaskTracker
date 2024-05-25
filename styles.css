@@ -1,0 +1,173 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif; /* Updated font */
+  background-color: #f4f4f4; /* Set background color */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container styles */
+.container {
+  max-width: 400px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px; /* More rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Heading styles */
+h1 {
+  text-align: center;
+  color: #333;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+/* Input field styles */
+input[type="text"] {
+  width: calc(100% - 24px); /* Adjust width */
+  padding: 12px; /* Slightly larger padding */
+  margin-bottom: 10px;
+  border: none; /* Remove border */
+  border-bottom: 1px solid #ccc; /* Add bottom border */
+  background-color: transparent; /* Transparent background */
+  font-size: 16px;
+  outline: none; /* Remove outline */
+}
+
+/* Button styles */
+button {
+  display: block;
+  width: 100%;
+  padding: 12px; /* Slightly larger padding */
+  background-color: #007aff; /* iOS blue color */
+  color: #fff;
+  border: none;
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 10px;
+  outline: none; /* Remove outline */
+}
+
+/* Hover styles for buttons */
+button:hover {
+  background-color: #005bb5; /* Darker blue on hover */
+}
+
+/* Link button styles */
+.link-button {
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  text-decoration: underline;
+  color: #007aff; /* iOS blue color */
+  padding: 0;
+  margin-left: 10px; /* Added margin for spacing */
+  border: none;
+  cursor: pointer;
+}
+
+/* Clear all button styles */
+.clear-all {
+  background-color: #ff3b30; /* Red color for clear all button */
+  color: white;
+}
+
+/* Hover styles for clear all button */
+.clear-all:hover {
+  background-color: #e63946; /* Darker red on hover */
+}
+
+/* Button container styles */
+.buttons {
+  display: flex;
+  justify-content: flex-end; /* Align buttons to the right */
+  flex-shrink: 0; /* Prevent buttons from shrinking */
+}
+
+/* Button spacing styles */
+.buttons button {
+  margin-left: 5px; /* Add some spacing between buttons */
+  padding: 5px 10px; /* Adjust padding for link buttons */
+  font-size: 14px; /* Smaller font size for link buttons */
+}
+
+/* List styles */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* List item styles */
+li {
+  padding: 12px; /* Slightly larger padding */
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #eee; /* Lighter border */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between items */
+  border-radius: 8px; /* Rounded corners */
+  margin-bottom: 10px; /* Margin between list items */
+  word-wrap: break-word; /* Ensure text wraps within the box */
+  overflow-wrap: break-word; /* Ensure text wraps within the box */
+  word-break: break-word; /* Ensure text breaks at any character */
+}
+
+/* Text styles */
+li span {
+  color:red;
+  font-size: 16px;
+  flex-grow: 1; /* Allow span to take remaining space */
+  margin-right: 10px; /* Add margin between text and buttons */
+}
+
+/* Checkbox styles */
+input[type="checkbox"] {
+  margin-right: 10px; /* Add margin to create space between checkbox and text */
+}
+
+/* Completed list item styles */
+li.completed span {
+  color: green; /* Change text color when completed */
+  text-decoration: line-through; /* Strike-through text */
+}
+
+/* Responsive styles */
+
+/* Container styles for smaller screens */
+@media (max-width: 500px) {
+  .container {
+    max-width: 90%; /* Reduce container width for smaller screens */
+    padding: 15px; /* Increase padding for better spacing */
+  }
+
+  /* Input field and button styles */
+  input[type="text"],
+  button {
+    padding: 10px; /* Decrease padding for smaller input fields and buttons */
+    font-size: 14px; /* Decrease font size for better readability */
+  }
+
+  /* Heading styles */
+  h1 {
+    font-size: 20px; /* Decrease font size for better readability */
+  }
+
+  /* List item styles */
+  li {
+    padding: 10px; /* Decrease padding for smaller list items */
+    font-size: 14px; /* Decrease font size for better readability */
+  }
+
+  /* Link button styles */
+  .link-button {
+    margin-left: 5px; /* Adjust margin for better spacing */
+  }
+}
+
